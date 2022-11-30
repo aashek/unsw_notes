@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Part A (25 marks) - obsidian-mkdocs template</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#part-a-25-marks">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Part A (25 marks)
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Obsidian Notes
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          COMP3161
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="COMP3161" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          COMP3161
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../TODO%203161/">
+        TODO 3161
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Truth%20Symbols/">
+        Truth Symbols
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../latex/">
+        Latex
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Ass
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Ass" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Ass
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Assignment%200-DESKTOP-8G34FJ6/">
+        Assignment 0 DESKTOP 8G34FJ6
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Part A (25 marks)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Wk1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Wk1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk1/Lecture%201/">
+        Lecture 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk1/Tut%201%20Haskell/">
+        Tut 1 Haskell
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk1/Tut%201/">
+        Tut 1
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Wk10
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk10" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Wk10
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk10/Abstract%20Data%20Types/">
+        Abstract Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk10/tut/">
+        Tut
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Wk2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Wk2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Exercise%201/">
+        Exercise 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Identity%20Laws/">
+        Identity Laws
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Inductive%20Case/">
+        Inductive Case
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Non%20Simultaneous%20Induction/">
+        Non Simultaneous Induction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Tut%202%20Revision/">
+        Tut 2 Revision
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk2/Tut%202/">
+        Tut 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Wk3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Wk3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk3/Lec%202/">
+        Lec 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk3/Tut%203/">
+        Tut 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Wk4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Wk4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk4/Tut%204/">
+        Tut 4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Wk5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Wk5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk5/Cost%20Models/">
+        Cost Models
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk5/TinyImp/">
+        TinyImp
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk5/tut5/">
+        Tut5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Wk7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Wk7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk7/Safety%20and%20Liveness/">
+        Safety and Liveness
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk7/tut%207/">
+        Tut 7
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_12" id="__nav_2_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_12">
+          Wk8
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk8" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_12">
+<span class="md-nav__icon md-icon"></span>
+          Wk8
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk8/Damas-Milner%20Type%20Inference/">
+        Damas Milner Type Inference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk8/Simple%20Definitions/">
+        Simple Definitions
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_13" id="__nav_2_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_13">
+          Wk9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Wk9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_13">
+<span class="md-nav__icon md-icon"></span>
+          Wk9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk9/Monad%20Tutorial/">
+        Monad Tutorial
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../wk9/SubTyping/">
+        SubTyping
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Features" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Features/LaTeX%20Math%20Support/">
+        LaTeX Math Support
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Features/Mermaid%20Diagrams/">
+        Mermaid diagrams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Features/Text%20Formatting/">
+        Text Formatting
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Topic 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Topic 1" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Topic 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Topic%201/Note%201/">
+        Note 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Topic%201/Note%202/">
+        Note 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="part-a-25-marks">Part A (25 marks)<a class="headerlink" href="#part-a-25-marks" title="Permanent link">¶</a></h1>
+<p>Consider the language of boolean expressions <span class="arithmatex">\(\mathcal{P}\)</span> containing just literals (True, False), parentheses, conjunction (∧) and negation (¬):<br/>
+<code>P = {True, False, ¬True, ¬False, True ∧ False, ¬(True ∧ False), . . . }</code>
+1. <em>Write down a set of inference rules that define the set <span class="arithmatex">\(\mathcal{P}\)</span>. The rules may be ambiguous. (5 marks)</em>
+$$
+\begin{gather}
+\dfrac{}{True Expr}\\
+\dfrac{}{False Expr}\\
+\dfrac{e Expr}{\negate e Expr}\\
+\dfrac{e Expr}{(e) Expr}\\
+\frac{e_1 Expr  e_2 Expr}{e_1 ∧  e_2  Expr}\;
+\end{gather}
+$$</p>
+<hr/>
+<ol>
+<li><em>The operator ¬ has the highest precedence, and conjunction is right-associative. Define a set of simultaneous judgements to define the language without any ambiguity. (5 marks)</em></li>
+</ol>
+<p>We define AExpr, and BExpr, where BExpr has lower precedence than AExpr.
+$$
+\dfrac{e AExpr}{e BExpr}\;
+$$
+True and False have equal highest precedence.
+$$
+\dfrac{}{True AExpr}\;
+\dfrac{}{False AExpr}\;
+$$
+Negation has the highest precedence.
+By using parentheses, we increase predecence.
+$$
+\dfrac{e AExpr}{¬e AExpr}\; \dfrac{e BExpr}{(e) AExpr}
+$$
+Conjuctions have less precedence then A, hence if we combine an A and a B, we get a B.
+Right associative means we need the right element to be a BExpr.
+$$
+\frac{e_1 AExpr  e_2 BExpr}{e_1 ∧  e_2  BExpr}\;
+$$</p>
+<hr/>
+<ol>
+<li>Here is an abstract syntax B for the same language:<br/>
+<code>B ::= Not B | And B B | True | False</code><br/>
+Write an inductive definition for the parsing relation connecting your unambiguous  judgements to this abstract syntax. (5 marks)  </li>
+</ol>
+<div class="arithmatex">\[
+Abstract\ Syntax
+$$
+$$
+\dfrac{i\in \{True, False\}}{(Bool\ i) \ AST}
+\dfrac{a\ AST}{(Not\ a)\ AST}
+\dfrac{a\ AST\ \ b\ AST}{(And\ a\ b)\ AST}
+\]</div>
+<p>$$
+\text{Parsing Relation}</p>
+<div class="arithmatex">\[
+$$
+\dfrac{i\in \{True, False\}}{i\ AExpr
+\longleftrightarrow(Bool\ i) \ AST}
+\]</div>
+<div class="arithmatex">\[
+\frac{
+e_1\ AExpr\longleftrightarrow\ e_1' \ AST
+\quad\quad
+e_2\ BExpr\longleftrightarrow\ e_2' \ AST
+}{
+e_1\ ∧ \ e_2 \ BExpr
+\longleftrightarrow\ (And\  \ e_1'\ e_2') \ AST
+}\;
+$$
+$$
+\dfrac{e\ AExpr\longleftrightarrow\ e' \ AST}
+{¬e\ AExpr\longleftrightarrow\ (Not \ e') \ AST}
+\;\ 
+\dfrac{e\ BExpr\longleftrightarrow\ e' \ AST}
+{(e)\ AExpr
+\longleftrightarrow
+\ e' \ AST
+}
+$$
+$$
+\dfrac{e\ AExpr\longleftrightarrow\ e' \ AST}
+{e\ BExpr
+\longleftrightarrow
+\ e' \ AST
+}
+\]</div>
+<hr/>
+<p>4.
+Here is a big-step semantics for the language
+$$\begin{gather}
+&amp;\dfrac{ \quad }{ \mathsf{True} \Downarrow \mathsf{True} }(B_1)\quad
+&amp;\dfrac{ \quad }{ \mathsf{False} \Downarrow \mathsf{False} }(B_2)\\
+&amp;\dfrac{ x \Downarrow \mathsf{True} }{\mathsf{Not} x\Downarrow\mathsf{False}}(B_3)\quad
+&amp;\dfrac{ x \Downarrow \mathsf{False } }{\mathsf{Not} x\Downarrow \mathsf{True}}(B_4)\\
+&amp;\dfrac{ x \Downarrow \mathsf{False } }{\mathsf{And} x y \Downarrow \mathsf{False}}(B_5)\quad
+&amp;\dfrac{ x \Downarrow \mathsf{True} \quad y \Downarrow v }{\mathsf{And} x y \Downarrow v}(B_6)
+\end{gather}
+$$</p>
+<p>a) Show the evaluation of And (Not (And True False)) True with a derivation tree. (5 marks).</p>
+<div class="arithmatex">\[
+\dfrac
+{\dfrac
+{\dfrac
+{\dfrac{}{True\ ⇓\ True\;}(B_5)\ \dfrac{}{False\ ⇓\ False\;}(B_6)}
+{(And\ \ True\ False)\ ⇓\ False}(B_4)
+}
+{(Not\ \ (And\ \ True\ False))\ ⇓\ True}(B_2)
+\;\dfrac{}{True\ ⇓\ True\;}(B_5)
+}
+{And\ \ (Not\ \ (And\ \ True\ False))\ \ True\ ⇓\ True}(B_4)
+\]</div>
+<hr/>
+<p>b) Consider the following inference rule:<br/>
+$$\dfrac{y ⇓ False}<br/>
+{And x y ⇓ False}
+$$
+If we assume that x B holds, is this rule derivable? Is it admissible? And if we don’t assume that x B holds, how does this change your answers? Justify your answers. (5 marks)</p>
+<p>$$\text{Assuming x B}
+$$
+The inference rule R cannot be derived. This is because there is no way to construct a tree that looks like:
+$$\dfrac{
+    \dfrac{y ⇓ False}
+        {\vdots
+        }
+}{And x y ⇓ False}\;
+$$
+However this rule is admissible, since it does not add strings to B. In this case if the result is used in the other inference rules, since x holds in B and y holds in B, that result will also hold in B.</p>
+<p>$$\text{Not Assuming x B}
+$$
+The inference rule R cannot be derived. This is because there is no way to construct a tree that looks like:
+$$\dfrac{
+    \dfrac{y ⇓ False}
+        {\vdots
+        }
+}{And x y ⇓ False}\;
+$$
+This rule is not admissible with the current assumption, since it adds strings to B. This is because x does not hold in B, and if we use x in the other rules, we will get something is also not admissible in B.</p>
+<hr/>
+<hr/>
+<h1 id="_1"><hr/><hr/><a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h1 id="part-b-20-marks">Part B (20 marks)<a class="headerlink" href="#part-b-20-marks" title="Permanent link">¶</a></h1>
+<p>Here is a small-step semantics for a language L with True, False and if expressions:<br/>
+L:: True | False | If L then L else L
+$$
+\begin{gather}
+    \dfrac{ c \mapsto c' }{(\texttt{If} c t e) \mapsto (\texttt{If} c' t e) }&amp;(1)\\
+    \dfrac{ }{(\texttt{If} \texttt{True} t e) \mapsto t }&amp;(2)\\
+    \dfrac{ }{(\texttt{If} \texttt{False} t e) \mapsto e }&amp;(3)
+\end{gather}
+$$
+1. Show the full evaluation of the term (If True (If True False True) False). (5 marks)  </p>
+<div class="arithmatex">\[
+\begin{align*}
+&amp;\text{(If True (If True False True) False)} \\
+&amp;\mapsto \text{If True False True (2)}\\
+&amp;\mapsto \text{False (2)}
+\end{align*}
+\]</div>
+<hr/>
+<ol>
+<li>Define an equivalent big-step semantics for L. (5 marks)  </li>
+</ol>
+<p>We define:
+A set of evaluable expressions T 
+A set of values V
+A relation ⇓ ⊆ E × V
+T is the set of all closed expressions {t | t ok} and V is the set {True, False}.</p>
+<div class="arithmatex">\[
+\begin{gather}
+\dfrac{}{\text{$v$\Downarrow $v$}}\quad&amp;(L_1)\\\\
+\dfrac{\text{ $t_1 \Downarrow$ True \quad$t_2 \Downarrow v_2$}}{\text{(If $t_1$ then $t_2$ else $t_3 )\Downarrow v_2$ }}&amp;(L_2)\\\\
+\dfrac{ \text{ $t_1 \Downarrow$ False \quad$t_3 \Downarrow v_3$}}{\text{(If $t_1$ then $t_2$ else $t_3 )\Downarrow v_3$ }}&amp;(L_3)
+\end{gather}
+\]</div>
+<hr/>
+<p>3.</p>
+<p>Prove that if <span class="arithmatex">\(e \Downarrow v\)</span> then <span class="arithmatex">\(e \stackrel{\star}{\mapsto} v\)</span>, where <span class="arithmatex">\(\Downarrow\)</span> is the big-step semantics you defined in the previous question, and <span class="arithmatex">\(\stackrel{\star}{\mapsto}\)</span> is the reflexive and transitive closure of <span class="arithmatex">\(\mapsto\)</span>. Use rule induction on <span class="arithmatex">\(e \Downarrow v\)</span>.</p>
+<h2 id="assumed-rules">Assumed Rules<a class="headerlink" href="#assumed-rules" title="Permanent link">¶</a></h2>
+<p>$$
+\dfrac{}{e \stackrel{\star}{\mapsto} e}refl
+\quad
+\dfrac{e \mapsto e' \quad e' \stackrel{\star}{\mapsto} e''}
+{e \stackrel{\star}{\mapsto} e''}trans</p>
+<p>$$</p>
+<h2 id="if-e-downarrow-v-then-e-stackrelstarmapsto-v">If <span class="arithmatex">\(e \Downarrow v\)</span> then <span class="arithmatex">\(e \stackrel{\star}{\mapsto} v\)</span><a class="headerlink" href="#if-e-downarrow-v-then-e-stackrelstarmapsto-v" title="Permanent link">¶</a></h2>
+<h4 id="base-case-ev-from-a">Base Case <span class="arithmatex">\((e=v)\)</span>, from (A)<a class="headerlink" href="#base-case-ev-from-a" title="Permanent link">¶</a></h4>
+<p>We must show that <span class="arithmatex">\(v\stackrel{\star}{\mapsto} v\)</span>, obvious by rule refl.</p>
+<h4 id="inductive-case-e-if-t_1-then-t_2-else-t_3-from-b">Inductive Case <span class="arithmatex">\((e\ =\ (If\ t_1\ then\ t_2\ else\ t_3))\)</span>, from (B)<a class="headerlink" href="#inductive-case-e-if-t_1-then-t_2-else-t_3-from-b" title="Permanent link">¶</a></h4>
+<p>We know that <span class="arithmatex">\(t_1 \Downarrow True\)</span> and <span class="arithmatex">\(t_2 \Downarrow v_2\)</span>, which gives us the inductive hypotheses:
+- <span class="arithmatex">\(IH_1 - t_1 \stackrel{\star}{\mapsto} True\)</span>
+- <span class="arithmatex">\(IH_2 - t_2 \stackrel{\star}{\mapsto} v_2\)</span></p>
+<p>Showing our overall goal:
+$$
+\begin{align*}
+\text{(If <span class="arithmatex">\(t_1\)</span> then <span class="arithmatex">\(t_2\)</span> else <span class="arithmatex">\(t_3\)</span>)}
+&amp;\stackrel{\star}{\mapsto}\text{(If True then <span class="arithmatex">\(t_2\)</span> else <span class="arithmatex">\(t_3\)</span>)}&amp;\text{(<span class="arithmatex">\(IH_1\)</span> with 1)}\
+&amp;\stackrel{\star}{\mapsto}t_2 &amp;(2)\
+&amp;\stackrel{\star}{\mapsto}\text{<span class="arithmatex">\(v_2\)</span>} &amp;(IH_2)\</p>
+<p>\end{align*}
+$$</p>
+<h4 id="inductive-case-e-if-t_1-then-t_2-else-t_3-from-c">Inductive Case <span class="arithmatex">\((e\ =\ (If\ t_1\ then\ t_2\ else\ t_3))\)</span>, from (C)<a class="headerlink" href="#inductive-case-e-if-t_1-then-t_2-else-t_3-from-c" title="Permanent link">¶</a></h4>
+<p>We know that <span class="arithmatex">\(t_1 \Downarrow False\)</span> and <span class="arithmatex">\(t_3 \Downarrow v_3\)</span>, which gives us the inductive hypotheses:
+- <span class="arithmatex">\(IH_1 - t_1 \stackrel{\star}{\mapsto} False\)</span>
+- <span class="arithmatex">\(IH_2 - t_3 \stackrel{\star}{\mapsto} v_3\)</span></p>
+<p>Showing our overall goal:
+$$
+\begin{align*}
+\text{(If <span class="arithmatex">\(t_1\)</span> then <span class="arithmatex">\(t_2\)</span> else <span class="arithmatex">\(t_3\)</span>)}
+&amp;\stackrel{\star}{\mapsto}\text{(If False then <span class="arithmatex">\(t_2\)</span> else <span class="arithmatex">\(t_3\)</span>)}&amp;\text{(<span class="arithmatex">\(IH_1\)</span> with 1)}\
+&amp;\stackrel{\star}{\mapsto}t_3 &amp;(3)\
+&amp;\stackrel{\star}{\mapsto}\text{<span class="arithmatex">\(v_3\)</span>} &amp;(IH_2)\</p>
+<p>\end{align*}
+$$</p>
+<p>Thus, by mathematical induction, we have shown one direction of the equivalence.</p>
+<h2 id="if-e-stackrelstarmapsto-v-then-e-downarrow-v">If <span class="arithmatex">\(e \stackrel{\star}{\mapsto} v\)</span> then <span class="arithmatex">\(e \Downarrow v\)</span><a class="headerlink" href="#if-e-stackrelstarmapsto-v-then-e-downarrow-v" title="Permanent link">¶</a></h2>
+<p>Doing rule induction on the assumption <span class="arithmatex">\(e \stackrel{\star}{\mapsto} v\)</span>  leads to two cases.</p>
+<h4 id="base-case-ev-from-refl">Base case <span class="arithmatex">\((e=v)\)</span>, from refl<a class="headerlink" href="#base-case-ev-from-refl" title="Permanent link">¶</a></h4>
+<p>We know that <span class="arithmatex">\(v \Downarrow v\)</span>, from rule (A).</p>
+<h4 id="inductive-case-ee-and-e-stackrelstarmapsto-v-from-trans">Inductive case (<span class="arithmatex">\(e↦e'\)</span> and <span class="arithmatex">\(e \stackrel{\star}{\mapsto} v\)</span>), from trans<a class="headerlink" href="#inductive-case-ee-and-e-stackrelstarmapsto-v-from-trans" title="Permanent link">¶</a></h4>
+<p>We have the inductive hypothesis that <span class="arithmatex">\(e'\Downarrow v\)</span>, so it suffices to prove the following lemma in order to discharge this case.
+<span class="arithmatex">\(<span class="arithmatex">\(\dfrac{s \mapsto s'\quad s' \Downarrow v}{s \Downarrow v}\)</span>\)</span></p>
+<h4 id="transitive-lemma-if-ee-and-ev-then-ev">Transitive Lemma: If <span class="arithmatex">\(e↦e'\)</span> and <span class="arithmatex">\(e'⇓v\)</span> then <span class="arithmatex">\(e⇓v\)</span><a class="headerlink" href="#transitive-lemma-if-ee-and-ev-then-ev" title="Permanent link">¶</a></h4>
+<p>Written as a logical statement, this lemma is:
+<span class="arithmatex">\(<span class="arithmatex">\(∀v. (e↦e')∧(e'⇓v)⇒e⇓v\)</span>\)</span>
+Equivalently, this can be stated as:
+<span class="arithmatex">\(<span class="arithmatex">\((e↦e')⇒(∀v. e′⇓v)⇒(e⇓v)\)</span>\)</span>
+This formulation lets us proceed by rule induction on the assumption <span class="arithmatex">\(e↦e'\)</span>, proving for each case for any arbitrary v:
+<span class="arithmatex">\(<span class="arithmatex">\(∀v. \dfrac{e'⇓v}{e⇓v}\)</span>\)</span></p>
+<h4 id="base-case-1-from-rule-2">Base Case 1, from rule (2)<a class="headerlink" href="#base-case-1-from-rule-2" title="Permanent link">¶</a></h4>
+<p>Here <span class="arithmatex">\(e = \text{(If True t e)}\)</span> and <span class="arithmatex">\(e' = t\)</span>.
+We have to show that <span class="arithmatex">\(e ⇓ v\)</span> assuming that <span class="arithmatex">\(e' ⇓ v\)</span>.
+The only way that assumption could hold, looking at the rules of ⇓, is if <span class="arithmatex">\(v = t\)</span> from rule A.
+Therefore we must show that <span class="arithmatex">\((\text{If True t e}) ⇓ t\)</span>, which is trivial from A and B.</p>
+<h4 id="base-case-2-from-rule-3">Base Case 2, from rule (3)<a class="headerlink" href="#base-case-2-from-rule-3" title="Permanent link">¶</a></h4>
+<p>Here <span class="arithmatex">\(e = \text{(If False t e)}\)</span> and <span class="arithmatex">\(e' = \text{e}\)</span>.
+We have to show that <span class="arithmatex">\(e ⇓ v\)</span> assuming that <span class="arithmatex">\(e' ⇓ v\)</span>.
+The only way that assumption could hold, looking at the rules of ⇓, is if <span class="arithmatex">\(v =\text{e}\)</span> from rule A.
+Therefore we must show that <span class="arithmatex">\(\text{(If True t e) ⇓ e}\)</span>, which is trivial from A and B.</p>
+<h4 id="inductive-case-from-rule-1">Inductive Case, from rule (1)<a class="headerlink" href="#inductive-case-from-rule-1" title="Permanent link">¶</a></h4>
+<p>Here <span class="arithmatex">\(e = \text{(If c t e)}\)</span> and <span class="arithmatex">\(e' = \text{(If c}'\text{ t e)}\)</span>. We know that <span class="arithmatex">\(c↦c'\)</span>, giving the inductive hypothesis that:</p>
+<div class="arithmatex">\[∀v. \dfrac{c'⇓v}{c⇓v}IH\]</div>
+<p>We must show that <span class="arithmatex">\(e ⇓ v\)</span> assuming that <span class="arithmatex">\(e' ⇓ v\)</span>.
+Looking at the rules for ⇓, the only way that <span class="arithmatex">\(e' ⇓ v\)</span> could hold is if there is some <span class="arithmatex">\(v_x\)</span> such that 
+<span class="arithmatex">\(\text{c}'⇓v_x\)</span> and <span class="arithmatex">\(\text{t} ⇓ v_t\)</span> and <span class="arithmatex">\(\text{e} ⇓ v_e\)</span>. (which can be proven by rule B and C). </p>
+<p>Hence by the inductive hypothesis, we have that <span class="arithmatex">\(c⇓v_x\)</span>. Therefore, <span class="arithmatex">\(e ⇓ v\)</span> as required.</p>
+<h1 id="_2"><hr/><hr/><a class="headerlink" href="#_2" title="Permanent link">¶</a></h1>
+<h1 id="part-c-15-marks">Part C (15 marks)<a class="headerlink" href="#part-c-15-marks" title="Permanent link">¶</a></h1>
+<ol>
+<li>Define a recursive compilation function <span class="arithmatex">\(c : B → L\)</span> which converts expressions in <span class="arithmatex">\(B\)</span> to expressions in <span class="arithmatex">\(L\)</span>. (5 marks)  </li>
+</ol>
+<div class="arithmatex">\[\begin{align}
+c(\textsf{Not} \; x) &amp;= \text{If\ $c(x)$\ then\ False\ else\ True}&amp;(C_1)\\\\
+c(\textsf{And} \; x \; y) &amp;= \text{If $c(x)$ then $c(y)$ else False}&amp;(C_2)\\\\
+c(\textsf{True}) &amp;= True&amp;(C_3)\\\\
+c(\textsf{False}) &amp;= False&amp;(C_4)
+\end{align}
+\]</div>
+<hr/>
+<ol>
+<li>Prove that for all <span class="arithmatex">\(e, e ⇓ v\)</span> implies <span class="arithmatex">\(c(e) ⇓ v\)</span>, by rule induction on the assumption that <span class="arithmatex">\(e ⇓ v\)</span>. (10 marks)</li>
+</ol>
+<p>For all proofs of induction, I have abbreviated <span class="arithmatex">\(True \implies \mathsf{T}\ and\ False \implies \mathsf{F}\)</span>.</p>
+<h3 id="rule-1">Rule (1)<a class="headerlink" href="#rule-1" title="Permanent link">¶</a></h3>
+<p>From (1), we declare <span class="arithmatex">\(e =\mathsf{Not}\ x\)</span>, <span class="arithmatex">\(v = \mathsf{F}\)</span> and the assumption <span class="arithmatex">\(x \Downarrow \mathsf{T}\)</span>.
+Hence the statement above we conclude our inductive hypothesis:
+$$
+\begin{align<em>}
+c(x)&amp;\Downarrow \mathsf{T}&amp;\quad(I.H.)
+\end{align</em>}</p>
+<p>$$</p>
+<p>We can now prove that <span class="arithmatex">\(c(e) \Downarrow v\)</span>, or in other words <span class="arithmatex">\(c(\mathsf{Not}\ x)=\mathsf{F}\)</span>.
+$$
+\begin{align*}</p>
+<p>\dfrac{\dfrac{}{c(x)\Downarrow \mathsf{T}}(I.H.)\quad\dfrac{}{\mathsf{F}\Downarrow \mathsf{F}}(B_6)}
+{
+\dfrac{\text{(If <span class="arithmatex">\(c(x)\)</span> then <span class="arithmatex">\(\mathsf{F}\)</span> else <span class="arithmatex">\(\mathsf{T}\)</span>) <span class="arithmatex">\(\Downarrow \mathsf{F}\)</span> }}
+{
+c(\mathsf{Not} x)  \Downarrow \mathsf{F}
+}(C_1)
+}(L_2)</p>
+<p>\end{align*}
+$$</p>
+<h3 id="rule-2">Rule (2)<a class="headerlink" href="#rule-2" title="Permanent link">¶</a></h3>
+<p>From (2), we declare <span class="arithmatex">\(e =\mathsf{Not}\ x\)</span>, <span class="arithmatex">\(v = \mathsf{T}\)</span> and the assumption <span class="arithmatex">\(x \Downarrow \mathsf{F}\)</span>.</p>
+<p>Hence the statement above we conclude our inductive hypothesis:
+$$
+\begin{align<em>}
+c(x)&amp;\Downarrow \mathsf{F}&amp;\quad(I.H.)
+\end{align</em>}</p>
+<p>$$</p>
+<p>We can now prove that <span class="arithmatex">\(c(e) \Downarrow v\)</span>, or in other words <span class="arithmatex">\(c(\mathsf{Not}\ x)=\mathsf{T}\)</span>.
+$$
+\begin{align*}</p>
+<p>\dfrac{\dfrac{}{c(x)\Downarrow \mathsf{F}}(I.H.)\quad\dfrac{}{\mathsf{T}\Downarrow \mathsf{T}}(B_5)}
+{
+\dfrac{\text{(If <span class="arithmatex">\(c(x)\)</span> then <span class="arithmatex">\(\mathsf{F}\)</span> else <span class="arithmatex">\(\mathsf{T}\)</span>) <span class="arithmatex">\(\Downarrow \mathsf{T}\)</span> }}
+{
+c(\mathsf{Not} x)  \Downarrow \mathsf{T}
+}(C_1)
+}(L_2)</p>
+<p>\end{align*}
+$$</p>
+<h3 id="rule-3">Rule (3)<a class="headerlink" href="#rule-3" title="Permanent link">¶</a></h3>
+<p>From (3), we declare <span class="arithmatex">\(e =\mathsf{And}\ x\ y\)</span>, <span class="arithmatex">\(v = \mathsf{F}\)</span> and the assumption <span class="arithmatex">\(x \Downarrow \mathsf{F}\)</span>.</p>
+<p>Hence the statement above we conclude our inductive hypotheses:
+$$
+\begin{align<em>}
+c(x)&amp;\Downarrow\mathsf{F} &amp;\quad(I.H.)
+\end{align</em>}
+$$</p>
+<p>We can now prove that <span class="arithmatex">\(c(e) \Downarrow v\)</span>, or in other words <span class="arithmatex">\(c(\mathsf{And}\ x\  y)=\mathsf{F}\)</span>.
+$$
+\begin{align*}
+\dfrac{</p>
+<p>\dfrac{}{c(x)\Downarrow \mathsf{F}}(I.H_1)\quad
+\dfrac{}{\mathsf{F}\Downarrow \mathsf{F}}(B_6)}</p>
+<p>{
+\dfrac{\text{(If <span class="arithmatex">\(c(x)\)</span> then <span class="arithmatex">\(c(y)\)</span> else <span class="arithmatex">\(\mathsf{F}\)</span>) <span class="arithmatex">\(\Downarrow \mathsf{F}\)</span> }}
+{
+c(\mathsf{And} x y)  \Downarrow \mathsf{F}
+}(C_2)
+}(L_3)</p>
+<p>\end{align*}
+$$</p>
+<h3 id="rule-4">Rule (4)<a class="headerlink" href="#rule-4" title="Permanent link">¶</a></h3>
+<p>For this proof, I have renamed the value <span class="arithmatex">\(v\)</span> from the rule, as <span class="arithmatex">\(\mathsf{v_k}\)</span>.</p>
+<p>From (4), we declare <span class="arithmatex">\(e =\mathsf{And}\ x\ y\)</span>, <span class="arithmatex">\(v = \mathsf{v_k}\)</span> and the assumptions <span class="arithmatex">\(x \Downarrow \mathsf{T}\)</span> and <span class="arithmatex">\(y \Downarrow \mathsf{v_k}\)</span>.</p>
+<p>Hence the statement above we conclude our inductive hypotheses:
+$$
+\begin{align<em>}
+c(x)&amp;\Downarrow \mathsf{T} &amp;\quad(I.H_1)
+\
+\
+c(y)&amp;\Downarrow \mathsf{v_k} &amp;\quad(I.H_2)
+\end{align</em>}</p>
+<p>$$</p>
+<p>We can now prove that <span class="arithmatex">\(c(e) \Downarrow v\)</span>, or in other words <span class="arithmatex">\(c(\mathsf{And}\ x\ y)=\mathsf{v_k}\)</span>.
+$$
+\begin{align*}
+\dfrac{</p>
+<p>\dfrac{}{c(x)\Downarrow \mathsf{T}}(I.H_1)\quad
+\dfrac{}{c(y)\Downarrow \mathsf{v_k}}(I.H_2)}</p>
+<p>{
+\dfrac{\text{(If <span class="arithmatex">\(c(x)\)</span> then <span class="arithmatex">\(c(y)\)</span> else <span class="arithmatex">\(\mathsf{F}\)</span>) <span class="arithmatex">\(\Downarrow \mathsf{v_k}\)</span> }}
+{
+c(\mathsf{And} x y)  \Downarrow \mathsf{v_k}
+}(C_2)
+}(L_2)</p>
+<p>\end{align*}
+$$</p>
+<h3 id="rule-5">Rule (5)<a class="headerlink" href="#rule-5" title="Permanent link">¶</a></h3>
+<p>From (5), we declare <span class="arithmatex">\(e = \mathsf{T}\)</span>, <span class="arithmatex">\(v = \mathsf{T}\)</span>.
+We can now prove that <span class="arithmatex">\(c(e) \Downarrow v\)</span>, or in other words <span class="arithmatex">\(c(\mathsf{T}) \Downarrow \mathsf{T}\)</span>.</p>
+<div class="arithmatex">\[
+\dfrac{}{\dfrac{T \Downarrow T}{c(T) \Downarrow T}}
+$$
+### Rule (6)
+From (6), we declare $e = \mathsf{F}$, $v = \mathsf{F}$.
+We can now prove that $c(e) \Downarrow v$, or in other words $c(e) \Downarrow \mathsf{F}$.
+$$
+\dfrac{}{\dfrac{F \Downarrow F}{c(F) \Downarrow F}}
+\]</div>
+<h1 id="_3"><hr/><hr/><a class="headerlink" href="#_3" title="Permanent link">¶</a></h1>
+<h1 id="part-d">Part D.<a class="headerlink" href="#part-d" title="Permanent link">¶</a></h1>
+<ol>
+<li>Here is a term in <span class="arithmatex">\(\lambda\)</span>-calculus:
+$$ (\lambda n. \lambda f. \lambda x. (n f (f x))) (\lambda f. \lambda x. f x) $$
+a) Fully β-reduce the above λ-term. Show all intermediate beta reduction steps. (5 marks)
+$$
+\begin{align<em>}
+(\lambda n. \lambda f. \lambda x. (n f (f x))) (\lambda f. \lambda x. f x)
+&amp;\mapsto_\beta\lambda f. \lambda x. ((\lambda f. \lambda x. f x)  f (f x))&amp;\text{[On <span class="arithmatex">\(n\)</span>]}\
+&amp;\equiv_\alpha\lambda f. \lambda x. ((\lambda f'. \lambda x'. f' x')  f (f x))&amp;\text{[<span class="arithmatex">\(f\mapsto\ f'\)</span>, <span class="arithmatex">\(x\mapsto\ x'\)</span>]}\
+&amp;\mapsto_\beta\lambda f. \lambda x. (( \lambda x'. f x' ) (f x))\quad&amp;\text{[On <span class="arithmatex">\(f'\)</span>]}\
+&amp;\mapsto_\beta\lambda f. \lambda x. f (f x)\quad \blacksquare &amp;\text{[On <span class="arithmatex">\(x'\)</span>]}
+\end{align</em>}
+$$</li>
+</ol>
+<hr/>
+<p>b) Identify an η-reducible expression in the above (unreduced) term. (5 marks)</p>
+<p>We can reduce the unreduced expression using <span class="arithmatex">\(\eta\)</span>-reduction on <span class="arithmatex">\(x\)</span>.
+$$
+\begin{align<em>}
+(\lambda n. \lambda f. \lambda x. (n f (f x))) (\lambda f. \lambda x. f x)
+&amp;\mapsto_\eta(\lambda n. \lambda f. \lambda x. (n f (f x))) (\lambda f. f)
+\end{align</em>}
+$$</p>
+<hr/>
+<h3 id="for-question-2-and-3-i-will-shorthand-x-y-x-implies-mathbft-and-x-y-y-implies-mathbff">For question 2 and 3, I will shorthand <span class="arithmatex">\((λx. λy. x) \implies \mathbf{T}\)</span> and <span class="arithmatex">\((λx. λy. y) \implies \mathbf{F}\)</span>.<a class="headerlink" href="#for-question-2-and-3-i-will-shorthand-x-y-x-implies-mathbft-and-x-y-y-implies-mathbff" title="Permanent link">¶</a></h3>
+<ol>
+<li>Recall that in λ-calculus, booleans can be encoded as binary functions that return one of their arguments:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}\mathbf{T} ≡ (λx. λy. x)\\  
+\mathbf{F} ≡ (λx. λy. y)  \end{align*}\)</span>\)</span>
+Either via L or directly, define a function d : B → λ which converts expressions in B to λ-calculus. (5 marks)</li>
+</ol>
+<div class="arithmatex">\[\begin{align*}
+d(\textsf{Not} \; x) &amp;= (\lambda x. x\ \mathbf{F}\ \mathbf{T})\ d(x)&amp;(D_1)\\\\
+d(\textsf{And} \; x \; y) &amp;= (\lambda a. \lambda b.\ a\ b\ a)\ d(x)\ d(y)&amp;(D_2)\\\\
+d(\textsf{True}) &amp;= \mathbf{T}&amp;(D_3)\\\\
+d(\textsf{False}) &amp;= \mathbf{F}&amp;(D_4)
+\end{align*}
+\]</div>
+<ol>
+<li>Prove that for all e such that <span class="arithmatex">\(e ⇓ v\)</span> it holds that <span class="arithmatex">\(d (e) \equiv_{\alpha\beta\eta} v'\)</span>, where <span class="arithmatex">\(v'\)</span> is the<br/>
+λ-calculus encoding of v.</li>
+</ol>
+<h3 id="rule-1_1">Rule (1)<a class="headerlink" href="#rule-1_1" title="Permanent link">¶</a></h3>
+<p>From (1), we declare <span class="arithmatex">\(e =\mathsf{Not}\ x\)</span>, <span class="arithmatex">\(v = \mathsf{False}\)</span> and the assumptions <span class="arithmatex">\(x \Downarrow \mathsf{True}\)</span>.
+From the statement above we have our inductive hypothesis:
+$$
+\begin{align<em>}
+d(x)&amp;=d(True)&amp;\
+&amp;=\mathbf{T}&amp;(I.H.)
+\end{align</em>}
+$$
+We also compute <span class="arithmatex">\(v'\)</span></p>
+<div class="arithmatex">\[
+\begin{align*}
+v'&amp;=d(v)&amp;\\
+&amp;=d(False)\\
+&amp;=\mathbf{F}
+\end{align*}
+\]</div>
+<p>We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{Not} \ x) \equiv_{\alpha\beta\eta} \mathsf{F}\)</span>.A
+$$
+\begin{align<em>}
+d(\mathsf{Not} x)
+&amp;=(\lambda x. x \mathbf{F} \mathbf{T})  d(x)&amp;(D_1)\
+&amp;=(\lambda x. x \mathbf{F} \mathbf{T})  \mathbf{T} &amp;(From  I.H)\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{T} \mathbf{F} \mathsf{T}\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{F} &amp;\blacksquare\
+\end{align</em>}
+$$</p>
+<h3 id="rule-2_1">Rule (2)<a class="headerlink" href="#rule-2_1" title="Permanent link">¶</a></h3>
+<p>From (2), we declare <span class="arithmatex">\(e =\mathsf{Not}\ x\)</span>, <span class="arithmatex">\(v = \mathsf{True}\)</span> and the assumptions <span class="arithmatex">\(x \Downarrow \mathsf{False}\)</span>.
+From the statement above we have our inductive hypothesis:
+$$
+\begin{align<em>}
+d(x)&amp;=d(False)&amp;\
+&amp;=\mathbf{F}&amp;(I.H.)
+\end{align</em>}
+$$
+We also compute <span class="arithmatex">\(v'\)</span></p>
+<div class="arithmatex">\[
+\begin{align*}
+v'&amp;=d(v)&amp;\\
+&amp;=d(True)\\
+&amp;=\mathbf{T}
+\end{align*}
+\]</div>
+<p>We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{Not} \ x) \equiv_{\alpha\beta\eta} \mathsf{T}\)</span>.
+$$
+\begin{align<em>}
+d(\mathsf{Not} x)
+&amp;=(\lambda x. x \mathbf{F} \mathbf{T})  d(x)&amp;(D_1)\
+&amp;=(\lambda x. x \mathbf{F} \mathbf{T})  \mathbf{F} &amp;(From  I.H)\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{F} \mathbf{F} \mathsf{T}\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{T} &amp;\blacksquare\
+\end{align</em>}
+$$</p>
+<h3 id="rule-3_1">Rule (3)<a class="headerlink" href="#rule-3_1" title="Permanent link">¶</a></h3>
+<p>From (3), we declare <span class="arithmatex">\(e =\mathsf{And}\ x\ y\)</span>, <span class="arithmatex">\(v = \mathsf{False}\)</span> and the assumptions <span class="arithmatex">\(x \Downarrow \mathsf{False}\)</span>.
+From the statement above we have our inductive hypotheses:
+$$
+\begin{align<em>}
+d(x)&amp;=d(False)&amp;\
+&amp;=\mathbf{F}&amp;(I.H.)\\
+\end{align</em>}
+$$
+We also compute <span class="arithmatex">\(v'\)</span></p>
+<div class="arithmatex">\[
+\begin{align*}
+v'&amp;=d(v)&amp;\\
+&amp;=d(False)\\
+&amp;=\mathbf{F}
+\end{align*}
+\]</div>
+<p>We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{And} \ x\ y) \equiv_{\alpha\beta\eta} \mathsf{F}\)</span>.
+$$
+\begin{align<em>}
+d(\mathsf{And} x y)
+&amp;=(\lambda a. \lambda b. a b a) d(x) d(y)&amp;(D_2)\
+&amp;=(\lambda a. \lambda b. a b a) \mathbf{F} d(y)&amp;(From  I.H)\
+&amp;\equiv_{\alpha\beta\eta}(\lambda b \mathbf{F} b \mathsf{F}) d(y)\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{F} d(y) \mathbf{F}\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{F} &amp;\blacksquare\
+\end{align</em>}
+$$</p>
+<h3 id="rule-4_1">Rule (4)<a class="headerlink" href="#rule-4_1" title="Permanent link">¶</a></h3>
+<p>For this proof, I have renamed the value <span class="arithmatex">\(v\)</span> from the rule, as <span class="arithmatex">\(\mathbf{v_k}\)</span>.
+From (4), we declare <span class="arithmatex">\(e =\mathsf{And}\ x\ y\)</span>, <span class="arithmatex">\(v = \mathbf{v_k}\)</span> and the assumptions <span class="arithmatex">\(x \Downarrow \mathsf{True}\)</span> and <span class="arithmatex">\(y \Downarrow \mathbf{v_k}\)</span>.
+From the statement above we have our inductive hypotheses:
+$$
+\begin{align<em>}
+d(x)&amp;=d(True)&amp;\
+&amp;=\mathbf{T}&amp;(I.H_1.)\\
+d(y)&amp;=d(\mathbf{v_k})&amp;(I.H_2.)
+\end{align</em>}
+$$
+We also compute <span class="arithmatex">\(v'\)</span></p>
+<div class="arithmatex">\[
+\begin{align*}
+v'&amp;=d(\mathbf{v_k})&amp;\\
+\end{align*}
+\]</div>
+<p>We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{And} \ x\ y) \equiv_{\alpha\beta\eta} d(\mathbf{v_k})\)</span>.
+$$
+\begin{align<em>}
+d(\mathsf{And} x y)
+&amp;=(\lambda a. \lambda b. a b a) d(x) d(y)&amp;(D_2)\
+&amp;=(\lambda a. \lambda b. a b a) \mathbf{T} d(\mathbf{v_k})&amp;(From  I.H_1 and I.H_2.)\
+&amp;\equiv_{\alpha\beta\eta}(\lambda b \mathbf{T} b \mathbf{T}) d(\mathbf{v_k})\
+&amp;\equiv_{\alpha\beta\eta}\mathbf{T} d(\mathbf{v_k}) \mathbf{T}\
+&amp;\equiv_{\alpha\beta\eta}d(\mathbf{v_k}) &amp;\blacksquare\
+\end{align</em>}
+$$</p>
+<h3 id="rule-5_1">Rule (5)<a class="headerlink" href="#rule-5_1" title="Permanent link">¶</a></h3>
+<p>From (5), we declare <span class="arithmatex">\(e = True\)</span> and <span class="arithmatex">\(v=True\)</span>.
+We also compute <span class="arithmatex">\(v'\)</span>
+$$
+\begin{align<em>}
+v'&amp;=d(True)\
+&amp;=\mathbf{T}
+\end{align</em>}
+$$
+We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{True} ) \equiv_{\alpha\beta\eta} \mathbf{T}\)</span>.
+$$
+\begin{align}
+d(True) &amp;\equiv_{\alpha\beta\eta} \mathbf{T} &amp;(D_3)
+\end{align}
+$$</p>
+<h3 id="rule-6">Rule (6)<a class="headerlink" href="#rule-6" title="Permanent link">¶</a></h3>
+<p>From (6), we declare <span class="arithmatex">\(e = False\)</span> and <span class="arithmatex">\(v=False\)</span>.
+We also compute <span class="arithmatex">\(v'\)</span>
+$$
+\begin{align<em>}
+v'&amp;=d(False)\
+&amp;=\mathbf{F} &amp;(D_4)
+\end{align</em>}
+$$
+We can now prove that <span class="arithmatex">\(d(e) \equiv_{\alpha\beta\eta} v'\)</span>, or in other words <span class="arithmatex">\(d(\mathsf{False} ) \equiv_{\alpha\beta\eta} \mathbf{F}\)</span>.
+$$
+\begin{align}
+d(False) &amp;\equiv_{\alpha\beta\eta} \mathbf{F} &amp;(D_3)
+\end{align}
+$$</p>
+<hr/>
+<ol>
+<li>Suppose we added unary local function definitions to our language <span class="arithmatex">\(\mathcal{P}\)</span>. Here's an example in concrete syntax:
+$$
+  \begin{array}{l}
+    \mathsf{let} \
+    \;\;\mathit{g}(\mathit{x}) = \neg\mathit{x} \
+    \mathsf{in} \
+    \;\; \mathit{g}(\mathsf{True})\
+    \mathsf{end}
+  \end{array}
+$$
+We limit ourselves to non-recursive bindings (meaning functions can't call themselves), and first-order functions (meaning functions require boolean arguments).</li>
+</ol>
+<p>a) Extend the abstract syntax for <span class="arithmatex">\(\mathcal{B}\)</span> from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don't have to extend the parsing relation. (5 marks)</p>
+<p>We extend B to 
+$$
+\begin{align}
+B ::&amp;= &amp;\mathsf{True}\
+&amp;| &amp;\mathsf{False}\
+&amp;| &amp;\mathsf{Not B}\
+&amp;| &amp;\mathsf{And B B}\
+&amp;| &amp;\mathsf{Func F B}\
+&amp;| &amp;\mathsf{Var M}\
+&amp;| &amp;\mathsf{Let F B B in B End}
+\end{align}
+$$
+For my additions:
+Func F B takes in two arguments, F is the function name and B is the variable.
+Var M takes in one argument, where M is a variable.
+Let F B B B takes in four arguments, F is the name of the function, the first B is the assigned variable for F, the second B is the replacement expression, and the third B is the expression we apply the function. 
+An example is Let "g" (Var "x") (Not "x") (F "g" True)</p>
+<p>b) Define a scope-checking judgement, similar to the <span class="arithmatex">\(\mathbf{ok}\)</span> judgement from the lectures. It should check (a) that all names of variables and functions are used only within their scopes; and (b) that names used in variable (or function) position are indeed the names of variables (or functions). Hence, the following expressions should both be rejected:</p>
+<p>$$</p>
+<p>\begin{array}{l}</p>
+<p>\mathsf{let} \</p>
+<p>\;\;\mathit{f}(\mathit{x}) = \neg\mathit{x} \</p>
+<p>\mathsf{in} \</p>
+<p>\;\; \mathit{f}(\mathit{x})\</p>
+<p>\mathsf{end}</p>
+<p>\end{array}</p>
+<p>\quad 
+\begin{array}{l}</p>
+<p>\mathsf{let} \</p>
+<p>\;\;\mathit{f}(\mathit{x}) = \neg\mathit{x} \</p>
+<p>\mathsf{in} \</p>
+<p>\;\; \mathit{f}(\mathit{f})\</p>
+<p>\mathsf{end}</p>
+<p>\end{array}</p>
+<p>\quad</p>
+<p>\begin{array}{l}</p>
+<p>\mathsf{let} \</p>
+<p>\;\;\mathit{f}(\mathit{x}) = \mathit{x}(\mathsf{True}) \</p>
+<p>\mathsf{in} \</p>
+<p>\;\; \mathit{f}(\mathsf{False})\</p>
+<p>\mathsf{end}</p>
+<p>\end{array}    </p>
+<p>$$
+    The following are examples of things that should be accepted: nullary definitions, nested definitions, and shadowed definitions.
+$$
+\begin{array}{l}</p>
+<p>\mathsf{let} \</p>
+<p>\;\;\mathit{f}(\mathit{x}) =\</p>
+<p>\quad\mathsf{let} \</p>
+<p>\quad\;\;\mathit{g}(\mathit{y}) = \neg\mathit{x}\wedge\mathit{y} \</p>
+<p>\quad\mathsf{in} \</p>
+<p>\quad\;\; \mathit{g}(\mathit{x}) \wedge \neg\mathit{g}(\mathit{x})\</p>
+<p>\quad\mathsf{end}\</p>
+<p>\mathsf{in} \</p>
+<p>\;\; \mathit{f}(\mathsf{False})\</p>
+<p>\mathsf{end}</p>
+<p>\end{array}</p>
+<p>\quad</p>
+<p>\begin{array}{l}</p>
+<p>\mathsf{let} \</p>
+<p>\;\;\mathit{f}(\mathit{x}) = \mathit{x}(\mathsf{True}) \</p>
+<p>\mathsf{in} \</p>
+<p>\quad\mathsf{let} \</p>
+<p>\quad\;\;\mathit{f}(\mathit{x}) = \mathit{f}(\mathit{x}) \</p>
+<p>\quad\mathsf{in} \</p>
+<p>\quad\;\; \mathit{f}(\mathsf{True})\</p>
+<p>\quad\mathsf{end}\</p>
+<p>\mathsf{end}</p>
+<p>\end{array}    
+$$
+Note that the latter example is not a recursive call. (10 marks)</p>
+<p>It should check 
+ (a) that all names of variables and functions are used only within their scopes
+ (b) that names used in variable (or function) position are indeed the names of variables (or functions).</p>
+<p>$$
+\begin{gather}
+&amp;\dfrac{}{\Gamma \vdash True \mathbf{ok}}\\
+&amp;\dfrac{}{\Gamma \vdash False \mathbf{ok}}\\
+&amp;\dfrac{\Gamma \vdash e_1 \mathbf{ok}}{\Gamma \vdash \mathsf{Not} (e_1) \mathbf{ok}}\\
+&amp;\dfrac{\Gamma \vdash e_1 \mathbf{ok}\quad\Gamma \vdash e_2 \mathbf{ok}}{\Gamma \vdash \mathsf{And} (e_1 e_2) \mathbf{ok}}\\
+&amp;\dfrac{(x bound)\in\Gamma}{\Gamma \vdash (Var x) \mathbf{ok}}\\
+&amp;\dfrac{(f bound)\in\Gamma\quad\Gamma\vdash e_1  \mathbf{ok}}{\Gamma \vdash (Func f e_1) \mathbf{ok}}\\
+&amp;\dfrac{(x bound), \Gamma\vdash e_1\quad(f bound) ,\Gamma\vdash e_2  \mathbf{ok}}{\Gamma \vdash (Let f x e_1 e_2) \mathbf{ok}}\\
+\end{gather}</p>
+<p>$$</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Assignment 0 DESKTOP 8G34FJ6" class="md-footer__link md-footer__link--prev" href="../Assignment%200-DESKTOP-8G34FJ6/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Assignment 0 DESKTOP 8G34FJ6
+            </div>
+</div>
+</a>
+<a aria-label="Next: Lecture 1" class="md-footer__link md-footer__link--next" href="../../wk1/Lecture%201/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Lecture 1
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
